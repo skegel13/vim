@@ -8,6 +8,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'vim-airline/vim-airline'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
+Plug 'andymass/vim-matchup'
+
+" Formatting/Linting
+Plug 'editorconfig/editorconfig-vim'
 
 " Project
 Plug 'airblade/vim-rooter'

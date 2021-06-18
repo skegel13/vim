@@ -15,6 +15,15 @@ set ignorecase
 
 " Overrides ignorecase if pattern contains upcase
 set smartcase
+set wildignorecase
+
+" Show the highlighted line
+set cursorline
+
+" Show column lengths
+set colorcolumn=80,120
+
+" INDENTATION
 
 " Shift to the next round tab stop.
 set shiftround
@@ -23,10 +32,24 @@ set shiftround
 set shiftwidth=4
 set tabstop=4
 
-" Show the highlighted line
-set cursorline
+set copyindent
+
+" MISC
+"
+" Set standard file type
+set ffs=unix,mac,dos
+
+" Scroll 5 lines at screen edges
+set scrolljump=5
+
+" Swap files out of the project root
+set backupdir="$HOME/.vim/temp/backup/"
+set directory="$HOME/.vim/temp/swap/"
 
 " PLUGIN SETTINGS
+
+" Editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " Rooter
 let g:rooter_patterns = ['>code', '.git', '!>node_modules', '!>vendor']

@@ -66,7 +66,10 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" nnoremap <silent> K :call <SID>show_documentation()<CR>
+"
+" Use <leader>k to show documentation in preview window.
+nnoremap <silent> <leader>k :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -163,6 +166,24 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" EXTENSIONS
+let g:coc_global_extensions = [
+	\'coc-blade-formatter',
+	\'coc-blade-linter',
+	\'coc-css',
+	\'coc-emmet',
+	\'coc-eslint',
+	\'coc-git',
+	\'coc-json',
+	\'coc-markdownlint',
+	\'coc-prettier',
+	\'coc-svelte',
+	\'coc-tailwindcss',
+	\'coc-tsserver',
+	\'coc-vetur',
+	\'@yaegassy/coc-intelephense',
+	\]
 
 " CUSTOM ITEMS
 

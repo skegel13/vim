@@ -12,7 +12,7 @@ inoremap jk <esc>
 " *** VIMRC ***
 
 " Open vimrc
-nnoremap <leader>ve :tabedit $MYVIMRC<CR>
+nnoremap <leader>ve :tabedit $HOME/.vim/init.vim<CR>
 
 " Source vimrc
 nnoremap <leader>vr :so $MYVIMRC<CR>
@@ -38,6 +38,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Open splits
+nmap vs :vsplit<cr>
+nmap sp :split<cr>
+
+" Split a line
+nnoremap K i<CR><Esc>
 
 " Select all text
 nnoremap vA ggVG
@@ -47,6 +53,15 @@ nnoremap Y y$
 
 "Delete to the end of line
 nnoremap D d$
+
+"Add simple highlight removal
+nmap <Leader><space> :nohlsearch<cr>
+
+" Remove the Windows ^M - when the encodings gets messed up
+noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
+" Fast saving
+nmap <leader>w :w!<cr>
 
 " Quickly quit editting without save
 nnoremap <leader>q :q!<CR>

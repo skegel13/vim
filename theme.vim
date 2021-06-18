@@ -3,7 +3,7 @@
 " *************
 
 " set bg=light	 
-set bg=dark	 
+set bg=light	 
 
 let g:airline_powerline_fonts = 1
 
