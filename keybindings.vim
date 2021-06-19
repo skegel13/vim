@@ -120,5 +120,27 @@ nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
 
 "Toggle FZF
-nnoremap <leader>p :FZF<CR>
+nnoremap <leader>p :Files<CR>
+nnoremap <leader>s :Blines<space>
+nnoremap <leader>sg :Rg<space>
 
+" CoC
+
+" Mappings for CoCList
+
+" Show all diagnostics.
+nnoremap <silent><nowait> <space>a  :<C-u>CocFzfList diagnostics<cr>
+
+" Manage extensions.
+nnoremap <silent><nowait> <space>e  :<C-u>CocFzfList extensions<cr>
+
+" Show commands.
+nnoremap <silent><nowait> <space>c  :<C-u>CocFzfList commands<cr>
+
+" Find symbol of current document.
+nnoremap <silent><nowait> <space>o  :<C-u>CocFzfList outline<cr>
+
+" Search workspace symbols.
+nnoremap <silent><nowait> <space>s  :<C-u>CocFzfList symbols<cr>
+
+nnoremap <space>g :CocFzfList gstatus<CR>

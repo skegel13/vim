@@ -2,8 +2,14 @@
 " *** THEME ***
 " *************
 
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable
+
 " set bg=light	 
-set bg=light	 
+set bg=dark	 
 
 let g:airline_powerline_fonts = 1
 
@@ -16,5 +22,6 @@ let g:spacegray_use_italics = 1
 " colorscheme gruvbox
 " colorscheme nord
 " colorscheme OceanicNext
-colorscheme papercolor
+" colorscheme papercolor
 " colorscheme spacegray
+colorscheme tender

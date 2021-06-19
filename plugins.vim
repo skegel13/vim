@@ -5,6 +5,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'antoinemadec/coc-fzf'
 Plug 'vim-airline/vim-airline'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
@@ -34,5 +36,6 @@ Plug 'mhartington/oceanic-next'
 Plug 'ajh17/spacegray.vim'
 Plug 'dracula/vim'
 Plug 'nlknguyen/papercolor-theme'
+Plug 'jacoborus/tender.vim'
 
 call plug#end()

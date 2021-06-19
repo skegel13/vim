@@ -42,6 +42,10 @@ set ffs=unix,mac,dos
 " Scroll 5 lines at screen edges
 set scrolljump=5
 
+" Better split settings
+set splitbelow
+set splitright
+
 " Swap files out of the project root
 set backupdir="$HOME/.vim/temp/backup/"
 set directory="$HOME/.vim/temp/swap/"
