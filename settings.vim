@@ -33,6 +33,7 @@ set shiftwidth=4
 set tabstop=4
 
 set copyindent
+set autoindent
 
 " MISC
 "
@@ -49,6 +50,56 @@ set splitright
 " Swap files out of the project root
 set backupdir="$HOME/.vim/temp/backup/"
 set directory="$HOME/.vim/temp/swap/"
+
+set noshowmode
+
+" SENSIBLE
+set backspace=indent,eol,start
+set smarttab
+
+set nrformats-=octal
+
+if !has('nvim') && &ttimeoutlen == -1
+  set ttimeout
+  set ttimeoutlen=100
+endif
+
+set laststatus=2
+set ruler
+set wildmenu
+
+
+if !&scrolloff
+  set scrolloff=1
+endif
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
+set display+=lastline
+
+if &listchars ==# 'eol:$'
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+
+set autoread
+
+if &history < 1000
+  set history=1000
+endif
+if &tabpagemax < 50
+  set tabpagemax=50
+endif
+if !empty(&viminfo)
+  set viminfo^=!
+endif
+set sessionoptions-=options
+set viewoptions-=options
+
+" Allow color schemes to do bright colors without forcing bold.
+if &t_Co == 8 && $TERM !~# '^Eterm'
+  set t_Co=16
+endif
+
 
 " PLUGIN SETTINGS
 

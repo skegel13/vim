@@ -3,14 +3,10 @@ call plug#begin('~/.vim/plugged')
 
 " Interface
 Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf'
 Plug 'vim-airline/vim-airline'
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-commentary'
-Plug 'andymass/vim-matchup'
 
 " Formatting/Linting
 Plug 'editorconfig/editorconfig-vim'
@@ -28,7 +24,15 @@ Plug 'mhinz/vim-signify'
 " Syntax
 Plug 'lumiliet/vim-twig'
 
-" Themes 
+" Utilities
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-surround'
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-commentary'
+Plug 'andymass/vim-matchup'
+Plug 'raimondi/delimitmate'
+
+" Themes
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
