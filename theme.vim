@@ -19,9 +19,9 @@ let g:gruvbox_contrast_dark = "soft"
 let g:spacegray_use_italics = 1
 
 " colorscheme dracula
-" colorscheme gruvbox
+colorscheme gruvbox
 " colorscheme nord
 " colorscheme OceanicNext
 " colorscheme papercolor
 " colorscheme spacegray
-colorscheme tender
+" colorscheme tender

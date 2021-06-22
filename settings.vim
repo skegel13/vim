@@ -100,6 +100,22 @@ if &t_Co == 8 && $TERM !~# '^Eterm'
   set t_Co=16
 endif
 
+" Autosave
+au FocusLost * silent! wa
+augroup AutoWrite
+    autocmd! BufLeave * :update
+    autocmd! FocusLost * silent! wa
+augroup END
+set autowrite
+set autowriteall
+
+" netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
 
 " PLUGIN SETTINGS
 

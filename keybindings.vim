@@ -115,9 +115,7 @@ nnoremap g# g#zz
 
 " *** PLUGIN RELATED BINDINGS ***
 
-" Toggle NERDTree
-nnoremap <leader>e :NERDTreeToggle<CR>
-nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>e :Vexplore<CR>
 
 "Toggle FZF
 nnoremap <leader>p :Files<CR>

@@ -2,7 +2,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Interface
-Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf'
