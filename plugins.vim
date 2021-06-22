@@ -31,6 +31,7 @@ Plug 'tpope/vim-commentary'
 Plug 'andymass/vim-matchup'
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-eunuch' 
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " Themes
 Plug 'vim-airline/vim-airline-themes'
