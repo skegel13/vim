@@ -30,6 +30,7 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
 Plug 'andymass/vim-matchup'
 Plug 'raimondi/delimitmate'
+Plug 'tpope/vim-eunuch' 
 
 " Themes
 Plug 'vim-airline/vim-airline-themes'
