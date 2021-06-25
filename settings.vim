@@ -36,7 +36,7 @@ set copyindent
 set autoindent
 
 " MISC
-"
+
 " Set standard file type
 set ffs=unix,mac,dos
 
@@ -52,6 +52,9 @@ set backupdir="$HOME/.vim/temp/backup/"
 set directory="$HOME/.vim/temp/swap/"
 
 set noshowmode
+
+set mouse+=a
+
 
 " SENSIBLE
 set backspace=indent,eol,start
@@ -116,6 +119,18 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
+" Status bar
+set statusline=
+" set statusline +=%1*\ %n\ %*            "buffer number
+" set statusline +=%5*%{&ff}%*            "file format
+" set statusline +=%3*%y%*                "file type
+set statusline +=%4*\ %<%f\ %{FugitiveStatusline()}%*            "full path
+set statusline +=%2*%m%*                "modified flag
+set statusline +=%1*%=%5l%*             "current line
+set statusline +=%2*/%L%*               "total lines
+set statusline +=%1*%4v\ %*             "virtual column number
+" set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
+
 
 " PLUGIN SETTINGS
 
@@ -124,6 +139,10 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " Rooter
 let g:rooter_patterns = ['>code', '.git', '!>node_modules', '!>vendor']
+
+" Vim Test
+let test#strategy = "vimterminal"
+let test#php#phpunit#executable = 'php artisan test'
 
 " Vim Visual Multi
 let g:VM_maps = {}

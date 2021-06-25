@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf'
-Plug 'vim-airline/vim-airline'
 
 " Formatting/Linting
 Plug 'editorconfig/editorconfig-vim'
@@ -32,9 +31,9 @@ Plug 'andymass/vim-matchup'
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-eunuch' 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'vim-test/vim-test'
 
 " Themes
-Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
@@ -42,5 +41,7 @@ Plug 'ajh17/spacegray.vim'
 Plug 'dracula/vim'
 Plug 'nlknguyen/papercolor-theme'
 Plug 'jacoborus/tender.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'drewtempelmeyer/palenight.vim'
 
 call plug#end()

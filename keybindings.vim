@@ -55,10 +55,10 @@ nnoremap Y y$
 nnoremap D d$
 
 "Add simple highlight removal
-nmap <Leader><space> :nohlsearch<cr>
+nmap <leader><space> :nohlsearch<cr>
 
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -66,34 +66,41 @@ nmap <leader>w :w!<cr>
 " Quickly quit editting without save
 nnoremap <leader>q :q!<CR>
 
+" *** BUFFERS ***
+nnoremap <leader>bd :bd<cr>
+nnoremap <leader>bp :bprevious<CR>
+nnoremap <leader>bn :bnext<CR>
+nnoremap bp :bprevious<CR>
+nnoremap bn :bnext<CR>
+
 
 " *** TABS ***
 
 " Switch between tabs
-nnoremap <Leader>1 1gt
-nnoremap <Leader>2 2gt
-nnoremap <Leader>3 3gt
-nnoremap <Leader>4 4gt
-nnoremap <Leader>5 5gt
-nnoremap <Leader>6 6gt
-nnoremap <Leader>7 7gt
-nnoremap <Leader>8 8gt
-nnoremap <Leader>9 9gt
+nnoremap <leader>1 1gt
+nnoremap <leader>2 2gt
+nnoremap <leader>3 3gt
+nnoremap <leader>4 4gt
+nnoremap <leader>5 5gt
+nnoremap <leader>6 6gt
+nnoremap <leader>7 7gt
+nnoremap <leader>8 8gt
+nnoremap <leader>9 9gt
 
 " Easily create a new tab.
-noremap <Leader>tN :tabnew<CR>
+noremap <leader>tN :tabnew<CR>
 
 " Easily close a tab.
-noremap <Leader>tc :tabclose<CR>
+noremap <leader>tc :tabclose<CR>
 
 " Easily move a tab.
-noremap <Leader>tm :tabmove<CR>
+noremap <leader>tm :tabmove<CR>
 
 " Easily go to next tab.
-noremap <Leader>tn :tabnext<CR>
+" noremap <leader>tn :tabnext<CR>
 
 " Easily go to previous tab.
-noremap <Leader>tp :tabprevious<CR>
+" noremap <leader>tp :tabprevious<CR>
 
 " Toggle Relative Number
 nnoremap <silent> <leader>nb :set relativenumber!<CR>
@@ -112,6 +119,9 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
+" Copy to clipboard
+vnoremap <leader>c "+y
+
 
 " *** PLUGIN RELATED BINDINGS ***
 
@@ -121,6 +131,19 @@ nnoremap <leader>e :Vexplore<CR>
 nnoremap <leader>p :Files<CR>
 nnoremap <leader>s :Blines<space>
 nnoremap <leader>sg :Rg<space>
+
+" Vim Test
+" nmap <silent> t<C-n> :TestNearest<CR>
+" nmap <silent> t<C-f> :TestFile<CR>
+" nmap <silent> t<C-s> :TestSuite<CR>
+" nmap <silent> t<C-l> :TestLast<CR>
+" nmap <silent> t<C-g> :TestVisit<CR>
+
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>ts :TestSuite<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+nmap <silent> <leader>tv :TestVisit<CR>
 
 " CoC
 
